@@ -209,3 +209,11 @@ function logout_button() {
         }
     })
 }
+
+document.querySelector('.hover-target').addEventListener('mouseover', function() {
+    document.querySelector('.blur-content').style.filter = 'blur(0)';
+});
+
+document.querySelector('.hover-target').addEventListener('mouseout', function() {
+    document.querySelector('.blur-content').style.filter = 'blur(5px)';
+});

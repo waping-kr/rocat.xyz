@@ -114,8 +114,8 @@ function showMenu2(open_id, close_id) {
   y.classList.add("hide");
 }
 
-function close_modal(modal_id, store_id) {
-  const url = `https://${store_id}.rocat.xyz/update/close/modal`;
+function close_modal(modal_id, store_id, domain) {
+  const url = `https://${store_id}.${domain}/update/close/modal`;
   var obj = new Object();
   obj.modal_id = modal_id;
   var json_data = JSON.stringify(obj);
@@ -163,3 +163,11 @@ function download(filename, text) {
   element.click();
   document.body.removeChild(element);
 }
+
+document.querySelector('.hover-target').addEventListener('mouseover', function() {
+  document.querySelector('.blur-content').style.filter = 'blur(0)';
+});
+
+document.querySelector('.hover-target').addEventListener('mouseout', function() {
+  document.querySelector('.blur-content').style.filter = 'blur(5px)';
+});
