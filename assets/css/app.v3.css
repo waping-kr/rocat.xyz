@@ -6811,6 +6811,7 @@
     border-radius: 20px;
     min-width: 0px;
     overflow-wrap: break-word;
+    margin-bottom: 10px;
     background: border-box rgb(255, 255, 255);
 }
 
@@ -8279,6 +8280,14 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .rocat-xyz-2x6a35 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
 .rocat-xyz-zg1vud {
     display: flex;
     flex-direction: column;
@@ -8291,6 +8300,12 @@
     position: relative;
 }
 
+.rocat-xyz-3eg73e img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+  
 @media screen and (min-width: 1600px) {
     .rocat-xyz-3eg73e {
         margin-bottom: 20px;
@@ -8789,6 +8804,19 @@
 @media screen and (min-width: 1600px) {
     .rocat-xyz-1kz1qz7 {
         flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .rocat-xyz-1kz1qz7 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .rocat-xyz-1kz1qz7 a button {
+      width: 100%;
+      margin-top: 5px;
     }
 }
 
