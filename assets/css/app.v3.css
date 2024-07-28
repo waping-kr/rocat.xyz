@@ -4019,12 +4019,19 @@
 @media screen and (min-width: 320px) {
     .rocat-xyz-135grut {
         margin-bottom: 8px;
+        display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
     .rocat-xyz-135grut {
         margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .rocat-xyz-135grut {
+        display: block;
     }
 }
 
@@ -6629,12 +6636,6 @@
     justify-content: flex-start;
     flex-direction: row;
     margin-inline: 10px;
-}
-
-@media screen and (min-width: 320px) {
-    .rocat-xyz-1dsay9e {
-        overflow-x: scroll;
-    }
 }
 
 @media screen and (min-width: 960px) {
@@ -10139,6 +10140,8 @@
 .rocat-xyz-1l5l5em {
     border-radius: var(--waping-radii-full);
     display: inline-flex;
+    max-width: 50%;
+    max-height: 50%;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
@@ -10165,29 +10168,32 @@
     --avatar-background: var(--waping-colors-gray-400);
 }
 
+@media screen and (min-width: 768px) {
+    .rocat-xyz-1l5l5em {
+        max-width: 30%;
+        max-height: 30%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .rocat-xyz-1l5l5em {
-        height: 170px;
-        width: 170px;
+        max-height: 250px;
+        max-width: 250px;
     }
 }
 
 .rocat-xyz-zwwzi4 {
+    object-fit: cover;
     width: 100%;
     max-height: 100%;
     height: 140px;
     border-radius: 20px;
 }
-  
-@media screen and (min-width: 768px) {
-    .rocat-xyz-zwwzi4 {
-        height: 100%;
-    }
-}
-  
+
 @media screen and (min-width: 1920px) {
     .rocat-xyz-zwwzi4 {
         width: 100%;
+        height: 100%;
         max-height: 27.5vh;
     }
 }
